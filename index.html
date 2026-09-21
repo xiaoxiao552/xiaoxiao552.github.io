@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>汤银晓 · 数据分析师 | 在线简历</title>
+<meta name="description" content="汤银晓的在线简历 — 大连财经学院 大数据管理与应用专业本科，求职意向：数据分析师。国家奖学金获得者，数学建模与数据竞赛获奖 5 项。" />
+<meta name="keywords" content="汤银晓,数据分析师,简历,大连财经学院,大数据管理与应用,数学建模" />
+<meta name="author" content="汤银晓" />
+<meta property="og:type" content="profile" />
+<meta property="og:title" content="汤银晓 · 数据分析师 | 在线简历" />
+<meta property="og:description" content="大连财经学院 大数据管理与应用 · 国家奖学金 · 竞赛获奖 5 项。" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%231E3A5F'/%3E%3Ctext x='50' y='69' font-size='56' text-anchor='middle' fill='%23C8A45C' font-family='sans-serif'%3E%E6%B1%A4%3C/text%3E%3C/svg%3E" />
+<style>
+  :root{
+    --navy:#1E3A5F; --navy-2:#2C4F77; --navy-3:#152B47;
+    --blue:#3D6E9C; --gold:#C8A45C; --gold-soft:#E8D3A0;
+    --card:#FFFFFF; --card-soft:#F7F9FC; --border:#E3E8EF;
+    --text:#1F2937; --muted:#5B6675;
+    --bg:#EEF2F7; --shadow:rgba(30,58,95,.10);
+    --side-bg:linear-gradient(165deg,#1E3A5F 0%,#152B47 100%);
+    --radius:16px;
+  }
+  html[data-theme="dark"]{
+    --navy:#1B3552; --navy-2:#24405F; --navy-3:#0E1D2E;
+    --blue:#6BA0D6; --gold:#D8B774; --gold-soft:#8A7440;
+    --card:#16233A; --card-soft:#1A2738; --border:#2A3B52;
+    --text:#E6EDF5; --muted:#9FB0C4;
+    --bg:#0B1420; --shadow:rgba(0,0,0,.45);
+    --side-bg:linear-gradient(165deg,#0E1D2E 0%,#132840 100%);
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;scroll-padding-top:24px;-webkit-text-size-adjust:100%;}
+  body{
+    font-family:"Microsoft YaHei","PingFang SC","Hiragino Sans GB","Source Han Sans SC",system-ui,-apple-system,sans-serif;
+    color:var(--text); background:var(--bg); line-height:1.75;
+    transition:background .35s ease,color .35s ease;
+  }
+  a{color:inherit;text-decoration:none;}
+  ul{list-style:none;}
+
+  /* ============ layout ============ */
+  .page{
+    max-width:1080px;margin:34px auto;padding:0 20px;
+    display:grid;grid-template-columns:320px 1fr;gap:0;
+    align-items:start;
+  }
+  .sheet{
+    background:var(--card);border:1px solid var(--border);border-radius:22px;
+    box-shadow:0 22px 60px var(--shadow);overflow:hidden;
+    display:grid;grid-template-columns:320px 1fr;
+  }
+
+  /* ============ sidebar ============ */
+  .side{
+    background:var(--side-bg);color:#fff;padding:38px 26px 32px;
+    position:relative;overflow:hidden;
+  }
+  .side::after{
+    content:"";position:absolute;right:-90px;bottom:-90px;width:260px;height:260px;
+    background:radial-gradient(circle,rgba(200,164,92,.22),transparent 68%);pointer-events:none;
+  }
+  .side>*{position:relative;z-index:1;}
+  .avatar{
+    width:118px;height:118px;border-radius:30px;margin:0 auto 20px;
+    background:linear-gradient(140deg,var(--gold),#f2dda6);
+    display:flex;align-items:center;justify-content:center;
+    font-size:52px;font-weight:800;color:#17304f;letter-spacing:2px;
+    box-shadow:0 14px 34px rgba(0,0,0,.34);border:3px solid rgba(255,255,255,.22);
+  }
+  .side-name{text-align:center;font-size:30px;font-weight:800;letter-spacing:4px;line-height:1.2;}
+  .side-role{
+    text-align:center;margin-top:8px;font-size:14.5px;color:var(--gold-soft);font-weight:600;letter-spacing:1px;
+  }
+  .side-role .sep{opacity:.55;margin:0 6px;}
+  .side-school{
+    text-align:center;margin-top:10px;font-size:12.5px;color:#B9C9DC;line-height:1.6;
+  }
+  .side-divider{height:1px;background:rgba(255,255,255,.14);margin:26px 0 22px;}
+  .side-h{
+    font-size:12px;letter-spacing:3px;color:var(--gold);font-weight:700;
+    text-transform:uppercase;margin-bottom:14px;
+  }
+  .clist li{
+    display:flex;gap:11px;align-items:flex-start;font-size:13.5px;color:#DDE7F2;
+    margin-bottom:12px;word-break:break-all;
+  }
+  .clist li .ic{
+    width:26px;height:26px;flex:0 0 26px;border-radius:8px;background:rgba(255,255,255,.12);
+    display:flex;align-items:center;justify-content:center;font-size:13px;margin-top:1px;
+  }
+  .clist li:hover{color:#fff;}
+  .clist a:hover{color:var(--gold-soft);}
+  .stat{display:flex;gap:10px;flex-wrap:wrap;}
+  .stat .box{
+    flex:1 1 44%;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);
+    border-radius:12px;padding:11px 12px;text-align:center;
+  }
+  .stat .box b{display:block;font-size:19px;color:var(--gold-soft);font-weight:800;line-height:1.3;}
+  .stat .box span{font-size:11.5px;color:#B9C9DC;letter-spacing:.5px;}
+  .chips{display:flex;flex-wrap:wrap;gap:8px;}
+  .chip{
+    font-size:12px;padding:5px 11px;border-radius:20px;
+    background:rgba(255,255,255,.10);border:1px solid rgba(255,255,255,.16);color:#E7EFF8;
+  }
+
+  /* ============ main ============ */
+  .main{padding:40px 40px 46px;}
+  .sec{margin-bottom:34px;}
+  .sec:last-child{margin-bottom:0;}
+  .sec-title{display:flex;align-items:center;gap:11px;margin-bottom:18px;}
+  .sec-title .bar{width:5px;height:24px;border-radius:3px;background:var(--gold);flex:0 0 5px;}
+  .sec-title h2{font-size:19.5px;color:var(--navy);font-weight:800;letter-spacing:1.5px;}
+  html[data-theme="dark"] .sec-title h2{color:#CFE0F2;}
+  .sec-title .en{
+    margin-left:auto;font-size:11px;letter-spacing:2.5px;color:var(--muted);
+    text-transform:uppercase;font-weight:600;opacity:.8;
+  }
+  .sec-title .line{flex:1;height:1px;background:var(--border);}
+
+  .card{
+    background:var(--card-soft);border:1px solid var(--border);border-left:4px solid var(--gold);
+    border-radius:12px;padding:16px 20px;margin-bottom:12px;
+    transition:transform .24s ease,box-shadow .24s ease,border-color .24s ease;
+  }
+  .card:last-child{margin-bottom:0;}
+  .card:hover{transform:translateX(4px);box-shadow:0 10px 26px var(--shadow);}
+  .card h3{font-size:15.5px;font-weight:700;color:var(--navy);margin-bottom:5px;letter-spacing:.5px;}
+  html[data-theme="dark"] .card h3{color:#8FBAE4;}
+  .card .meta{font-size:13px;color:var(--muted);margin-bottom:9px;display:flex;flex-wrap:wrap;gap:6px 14px;}
+  .card .meta .k{font-weight:600;color:var(--blue);}
+  html[data-theme="dark"] .card .meta .k{color:var(--blue);}
+  .card p{font-size:13.8px;color:var(--text);opacity:.92;}
+  .bullets li{
+    position:relative;padding-left:17px;font-size:13.8px;margin-bottom:6px;color:var(--text);
+  }
+  .bullets li:last-child{margin-bottom:0;}
+  .bullets li::before{
+    content:"";position:absolute;left:0;top:9px;width:6px;height:6px;border-radius:2px;
+    background:var(--gold);transform:rotate(45deg);
+  }
+  .bullets li b{color:var(--navy);font-weight:700;}
+  html[data-theme="dark"] .bullets li b{color:#8FBAE4;}
+  .bullets.tight li{margin-bottom:5px;}
+
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+  .two .card{margin-bottom:0;height:100%;}
+
+  .tagline{
+    background:linear-gradient(120deg,rgba(200,164,92,.13),rgba(61,110,156,.10));
+    border:1px dashed rgba(200,164,92,.55);border-radius:12px;
+    padding:13px 18px;font-size:13.5px;color:var(--text);
+  }
+  .tagline b{color:var(--navy);}
+  html[data-theme="dark"] .tagline b{color:#8FBAE4;}
+
+  .foot{
+    margin-top:36px;padding-top:20px;border-top:1px solid var(--border);
+    display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;align-items:center;
+    font-size:12.5px;color:var(--muted);
+  }
+  .foot .acts{display:flex;gap:10px;flex-wrap:wrap;}
+  .btn{
+    display:inline-flex;align-items:center;gap:7px;cursor:pointer;border:none;
+    padding:9px 16px;border-radius:10px;font-size:13px;font-weight:600;font-family:inherit;
+    background:var(--navy);color:#fff;transition:transform .2s ease,box-shadow .2s ease,background .2s ease;
+  }
+  .btn:hover{transform:translateY(-2px);box-shadow:0 8px 20px var(--shadow);}
+  .btn.ghost{background:transparent;color:var(--navy);border:1px solid var(--border);}
+  html[data-theme="dark"] .btn.ghost{color:#CFE0F2;}
+
+  /* floating theme toggle */
+  .theme-fab{
+    position:fixed;right:22px;bottom:22px;z-index:99;width:46px;height:46px;border-radius:50%;
+    border:1px solid var(--border);background:var(--card);color:var(--text);cursor:pointer;
+    font-size:19px;display:flex;align-items:center;justify-content:center;
+    box-shadow:0 10px 26px var(--shadow);transition:transform .2s ease;
+  }
+  .theme-fab:hover{transform:scale(1.08) rotate(12deg);}
+
+  .reveal{opacity:0;transform:translateY(18px);transition:opacity .55s ease,transform .55s ease;}
+  .reveal.in{opacity:1;transform:none;}
+
+  /* ============ responsive ============ */
+  @media (max-width:900px){
+    .page{padding:0;}
+    .sheet{grid-template-columns:1fr;border-radius:0;border-left:none;border-right:none;}
+    .side{padding:32px 22px 26px;}
+    .main{padding:28px 22px 34px;}
+    .two{grid-template-columns:1fr;}
+    .theme-fab{right:14px;bottom:14px;}
+  }
+  @media (max-width:520px){
+    .side-name{font-size:26px;}
+    .sec-title .en{display:none;}
+    .two{grid-template-columns:1fr;}
+  }
+
+  /* ============ print ============ */
+  @media print{
+    @page{size:A4;margin:12mm;}
+    html,body{background:#fff !important;color:#000 !important;}
+    .theme-fab,.foot .acts{display:none !important;}
+    .page{max-width:none;margin:0;padding:0;}
+    .sheet{display:block;border:none;box-shadow:none;border-radius:0;}
+    .side{
+      background:#fff !important;color:#000 !important;
+      border-bottom:2px solid #1E3A5F;padding:0 0 12px;
+      display:flex;flex-wrap:wrap;gap:0 22px;align-items:center;
+    }
+    .side::after{display:none;}
+    .avatar{display:none;}
+    .side-name{font-size:24px;color:#1E3A5F;text-align:left;letter-spacing:2px;}
+    .side-role,.side-school{text-align:left;color:#333;font-size:12px;}
+    .side-divider{display:none;}
+    .side-block{margin-top:8px;flex:1 1 100%;}
+    .side-h{color:#1E3A5F;font-size:10px;margin-bottom:6px;}
+    .clist{display:flex;flex-wrap:wrap;gap:4px 18px;}
+    .clist li{color:#222;font-size:11.5px;margin:0;}
+    .clist li .ic{display:none;}
+    .stat .box{background:#F2F4F7;border-color:#ddd;}
+    .stat .box b{color:#1E3A5F;}
+    .stat .box span{color:#555;}
+    .chip{background:#F2F4F7;border-color:#ddd;color:#333;}
+    .main{padding:14px 0 0;}
+    .card{background:#fff;border-color:#ddd;border-left-color:#C8A45C;break-inside:avoid;page-break-inside:avoid;margin-bottom:8px;padding:9px 12px;}
+    .card:hover{transform:none;box-shadow:none;}
+    .card h3{color:#1E3A5F;font-size:13px;}
+    .card .meta,.card p,.bullets li{font-size:11.5px;}
+    .reveal{opacity:1 !important;transform:none !important;}
+    .sec{margin-bottom:14px;}
+    .sec-title{margin-bottom:8px;}
+    .sec-title h2{font-size:14px;}
+    .sec-title .en{display:none;}
+    .tagline{background:#FAF7F0;border-color:#C8A45C;}
+    .foot{border-top-color:#ddd;font-size:10.5px;margin-top:14px;padding-top:10px;}
+  }
+</style>
+</head>
+<body>
+
+<div class="page">
+  <div class="sheet">
+
+    <!-- ================= SIDEBAR ================= -->
+    <aside class="side">
+      <div class="avatar">汤</div>
+      <div class="side-name">汤银晓</div>
+      <div class="side-role">求职意向<span class="sep">·</span>数据分析师</div>
+      <div class="side-school">大连财经学院 · 管理学院<br />大数据管理与应用 · 2023 级本科</div>
+
+      <div class="side-divider"></div>
+
+      <div class="side-block">
+        <div class="side-h">联系方式</div>
+        <ul class="clist">
+          <li><span class="ic">📱</span><a href="tel:13884463051">138-8446-3051</a></li>
+          <li><span class="ic">✉️</span><a href="mailto:3547813330@qq.com">3547813330@qq.com</a></li>
+          <li><span class="ic">📍</span><span>辽宁 · 大连</span></li>
+          <li><span class="ic">🎓</span><span>预计 2027 年毕业</span></li>
+        </ul>
+      </div>
+
+      <div class="side-divider"></div>
+
+      <div class="side-block">
+        <div class="side-h">亮点概览</div>
+        <div class="stat">
+          <div class="box"><b>5</b><span>学科竞赛获奖</span></div>
+          <div class="box"><b>2</b><span>国家级奖学金</span></div>
+          <div class="box"><b>主席</b><span>学院实践中心</span></div>
+          <div class="box"><b>4</b><span>技能证书</span></div>
+        </div>
+      </div>
+
+      <div class="side-divider"></div>
+
+      <div class="side-block">
+        <div class="side-h">能力标签</div>
+        <div class="chips">
+          <span class="chip">数据分析</span>
+          <span class="chip">数学建模</span>
+          <span class="chip">统计方法</span>
+          <span class="chip">信息系统</span>
+          <span class="chip">团队协作</span>
+          <span class="chip">活动策划</span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- ================= MAIN ================= -->
+    <main class="main">
+
+      <!-- 自我评价 -->
+      <section class="sec reveal" id="about">
+        <div class="sec-title"><span class="bar"></span><h2>自我评价</h2><span class="line"></span><span class="en">About</span></div>
+        <div class="card">
+          <ul class="bullets">
+            <li><b>专业基础：</b>大数据管理与应用专业本科在读，接受数据管理、信息系统与统计方法的系统训练。</li>
+            <li><b>竞赛能力：</b>累计获国家级、省级、市级学科竞赛奖 5 项，具备将数理方法用于实际问题的训练。</li>
+            <li><b>学业表现：</b>获国家奖学金、国家励志奖学金及多次校级综合奖学金，学业基础扎实。</li>
+            <li><b>组织协调：</b>担任学院实践中心主席，具备活动策划、团队管理与跨部门协作经验。</li>
+            <li><b>工具与证书：</b>持有计算机二级、网络信息安全工程师等证书，具备信息技术应用基础。</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 教育背景 -->
+      <section class="sec reveal" id="education">
+        <div class="sec-title"><span class="bar"></span><h2>教育背景</h2><span class="line"></span><span class="en">Education</span></div>
+        <div class="card">
+          <h3>大连财经学院 · 管理学院</h3>
+          <div class="meta">
+            <span><span class="k">专业：</span>大数据管理与应用</span>
+            <span><span class="k">学历：</span>本科（四年制）</span>
+            <span><span class="k">时间：</span>2023 级 · 预计 2027 年毕业</span>
+          </div>
+          <p>专业培养方向涵盖数据管理、数据分析与信息系统应用，系统接受统计方法与信息技术训练。</p>
+        </div>
+      </section>
+
+      <!-- 校园任职 -->
+      <section class="sec reveal" id="experience">
+        <div class="sec-title"><span class="bar"></span><h2>校园任职</h2><span class="line"></span><span class="en">Experience</span></div>
+        <div class="card">
+          <h3>管理学院实践中心　主席</h3>
+          <ul class="bullets">
+            <li>统筹实践中心日常运营与学年工作计划，保障各项活动有序推进。</li>
+            <li>组织院内实践活动与学科竞赛动员，搭建师生沟通与经验分享桥梁。</li>
+            <li>负责成员分工、培训与考核，协调跨部门对接与校内外资源联动。</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 荣誉奖励 -->
+      <section class="sec reveal" id="honors">
+        <div class="sec-title"><span class="bar"></span><h2>荣誉奖励</h2><span class="line"></span><span class="en">Honors</span></div>
+        <div class="card">
+          <ul class="bullets tight">
+            <li>国家奖学金</li>
+            <li>国家励志奖学金</li>
+            <li>校级综合奖学金（多次）</li>
+            <li>三好学生</li>
+            <li>突出贡献奖</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 竞赛奖项 -->
+      <section class="sec reveal" id="awards">
+        <div class="sec-title"><span class="bar"></span><h2>竞赛奖项</h2><span class="line"></span><span class="en">Awards</span></div>
+        <div class="card">
+          <ul class="bullets tight">
+            <li>2024 年　华为信息化技能大赛　<b>二等奖</b></li>
+            <li>2024 年　辽宁省数学建模竞赛　<b>三等奖</b></li>
+            <li>2024 年　高教杯全国数学竞赛　<b>三等奖</b></li>
+            <li>第十六届　大连市数学竞赛　<b>一等奖</b></li>
+            <li>2026 年　全国计算机设计大赛　<b>三等奖</b></li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 技能证书 -->
+      <section class="sec reveal" id="skills">
+        <div class="sec-title"><span class="bar"></span><h2>技能证书</h2><span class="line"></span><span class="en">Skills</span></div>
+        <div class="card">
+          <ul class="bullets tight">
+            <li>全国计算机等级考试二级证书</li>
+            <li>大学英语四级（CET-4）</li>
+            <li>网络信息安全工程师</li>
+            <li>普通话水平测试证书</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 一句话 -->
+      <section class="sec reveal">
+        <div class="tagline">
+          <b>一句话介绍：</b>数据敏感度高、数理基础扎实，习惯用数据把问题讲清楚 —— 希望在数据分析岗位上持续把这些训练变成真实价值。
+        </div>
+      </section>
+
+      <div class="foot">
+        <div>汤银晓　·　求职意向：数据分析师　·　138-8446-3051　·　3547813330@qq.com</div>
+        <div class="acts">
+          <button class="btn ghost" onclick="window.print()">⬇ 导出 / 打印 PDF</button>
+          <a class="btn" href="mailto:3547813330@qq.com">📨 联系我</a>
+        </div>
+      </div>
+
+    </main>
+  </div>
+</div>
+
+<button class="theme-fab" id="themeFab" title="切换深色 / 浅色" aria-label="切换主题">🌙</button>
+
+<script>
+  (function(){
+    // ---------- theme ----------
+    var root = document.documentElement;
+    var fab  = document.getElementById('themeFab');
+    var saved = null;
+    try { saved = localStorage.getItem('tang-resume-theme'); } catch(e){}
+    if (saved === 'dark') { root.setAttribute('data-theme','dark'); }
+    function syncIcon(){
+      fab.textContent = root.getAttribute('data-theme') === 'dark' ? '☀️' : '🌙';
+    }
+    syncIcon();
+    fab.addEventListener('click', function(){
+      var next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      root.setAttribute('data-theme', next);
+      try { localStorage.setItem('tang-resume-theme', next); } catch(e){}
+      syncIcon();
+    });
+
+    // ---------- reveal on scroll ----------
+    var items = document.querySelectorAll('.reveal');
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function(entries){
+        entries.forEach(function(en){
+          if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); }
+        });
+      }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+      items.forEach(function(el, i){ el.style.transitionDelay = Math.min(i*40, 200) + 'ms'; io.observe(el); });
+    } else {
+      items.forEach(function(el){ el.classList.add('in'); });
+    }
+  })();
+</script>
+</body>
+</html>
